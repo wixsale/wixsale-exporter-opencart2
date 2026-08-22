@@ -36,7 +36,7 @@ This package ships dual admin entry points for maximum compatibility:
 
 ### Option A — Extension Installer (OpenCart 2.3+)
 
-1. Download `wixsale-exporter-opencart2-1.0.0.zip` from the releases page.
+1. Download `wixsale-exporter-opencart2-1.0.0.ocmod.zip` from the releases page.
 2. In admin, go to **Extensions → Extension Installer**.
 3. Upload the ZIP and confirm the installation.
 
@@ -107,8 +107,10 @@ The header includes site metadata, languages, categories, manufacturers, and att
 
 ```bash
 cd wixsale-exporter-opencart2
-zip -r ../wixsale-exporter-opencart2-1.0.0.zip upload install.xml
+zip -r ../wixsale-exporter-opencart2-1.0.0.ocmod.zip upload install.xml
 ```
+
+The file name **must** end in `.ocmod.zip` when using the Extension Installer (OpenCart 2.3+). A plain `.zip` will be rejected with “Invalid file type!”.
 
 ---
 
